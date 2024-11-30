@@ -23,51 +23,89 @@ export const en = {
       products: 'Explore Products'
     }
   },
+  // products: {
+  //   title: 'Our Products',
+  //   subtitle: 'Discover our innovative solutions for modern menstrual care',
+  //   description: 'A revolutionary menstrual care product that combines comfort, sustainability, and innovation.',
+  //   tabs: {
+  //     features: 'Features',
+  //     specifications: 'Specifications',
+  //     impact: 'Environmental Impact'
+  //   },
+  //   features: {
+  //     eco: {
+  //       title: 'Eco-Friendly Material',
+  //       description: 'Made from 100% biodegradable materials, reducing environmental impact.'
+  //     },
+  //     smart: {
+  //       title: 'Smart Absorption',
+  //       description: 'Advanced technology for optimal comfort and protection.'
+  //     },
+  //     easy: {
+  //       title: 'Easy Installation',
+  //       description: 'Simple and intuitive design for hassle-free use.'
+  //     }
+  //   },
+  //   specifications: {
+  //     material: 'Material',
+  //     duration: 'Duration',
+  //     'size-options': 'Size Options',
+  //     packaging: 'Packaging'
+  //   },
+  //   impact: {
+  //     title: 'Environmental Impact',
+  //     co2: 'CO2 Saved',
+  //     waste: 'Waste Prevented',
+  //     water: 'Water Saved'
+  //   },
+  //   grid: {
+  //     title: 'Our Products',
+  //     subtitle: 'Discover our complete range of menstrual care solutions',
+  //     categories: {
+  //       all: 'All Products',
+  //       dispenser: 'Dispensers',
+  //       refill: 'Refills'
+  //     }
+  //   }
+  // },
+
   products: {
-    title: 'Our Products',
-    subtitle: 'Discover our innovative solutions for modern menstrual care',
-    description: 'A revolutionary menstrual care product that combines comfort, sustainability, and innovation.',
-    tabs: {
-      features: 'Features',
-      specifications: 'Specifications',
-      impact: 'Environmental Impact'
-    },
-    features: {
-      eco: {
-        title: 'Eco-Friendly Material',
-        description: 'Made from 100% biodegradable materials, reducing environmental impact.'
+    evolution: {
+      title: "Product Evolution",
+      subtitle: "Our journey towards zero environmental impact",
+      v1: {
+        title: "FreePeriod 1.0",
+        subtitle: "Revolutionary Sustainable Dispenser",
+        description: "Our first-generation smart dispenser achieved a breakthrough 98.5% reduction in carbon emissions compared to traditional vending machines."
       },
-      smart: {
-        title: 'Smart Absorption',
-        description: 'Advanced technology for optimal comfort and protection.'
-      },
-      easy: {
-        title: 'Easy Installation',
-        description: 'Simple and intuitive design for hassle-free use.'
+      v2: {
+        title: "FreePeriod 2.0",
+        subtitle: "The Next Evolution",
+        description: "Setting new standards in sustainable dispensing with enhanced efficiency.",
+        comingSoon: "Coming Soon"
       }
     },
     specifications: {
-      material: 'Material',
-      duration: 'Duration',
-      'size-options': 'Size Options',
-      packaging: 'Packaging'
-    },
-    impact: {
-      title: 'Environmental Impact',
-      co2: 'CO2 Saved',
-      waste: 'Waste Prevented',
-      water: 'Water Saved'
-    },
-    grid: {
-      title: 'Our Products',
-      subtitle: 'Discover our complete range of menstrual care solutions',
-      categories: {
-        all: 'All Products',
-        dispenser: 'Dispensers',
-        refill: 'Refills'
-      }
+      title: "Technical Specifications",
+      power: "Power Rating",
+      energy: "Annual Energy Consumption",
+      emissions: "Carbon Emissions",
+      type: "Product Type"
     }
   },
+  
+  impact: {
+    chart: {
+      title: "Carbon Emission Comparison",
+      v2note: "FreePeriod 2.0 will achieve even lower emissions - Coming Soon",
+      traditional: "Traditional Vending Machine",
+      freePeriod: "FreePeriod Smart Dispenser",
+      power: "Power Consumption",
+      energy: "Annual Energy Use",
+      emissions: "Carbon Emissions"
+    }
+  },
+  
   locations: {
     title: 'Find Our Locations',
     subtitle: 'Discover FreePeriod dispensers near you',
