@@ -1,71 +1,44 @@
+'use client';
+
 import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from './translations';
+import type { Language } from './translations';
 
-type TranslationType = {
-  navigation: {
-    home: string;
-    products: string;
-    locations: string;
-    impact: string;
-    education: string;
-  };
-  hero: {
-    headline: string;
-    subheadline: string;
-    cta: {
-      primary: string;
-      secondary: string;
-    };
-  };
-};
+type NestedKeyOf<T> = T extends object
+  ? {
+      [K in keyof T]: K extends string
+        ? T[K] extends object
+          ? `${K}.${NestedKeyOf<T[K]>}`
+          : K
+        : never;
+    }[keyof T]
+  : never;
 
-const translations: Record<'en' | 'zh', TranslationType> = {
-  en: {
-    navigation: {
-      home: 'Home',
-      products: 'Products',
-      locations: 'Locations',
-      impact: 'Impact',
-      education: 'Education'
-    },
-    hero: {
-      headline: 'Revolutionizing Menstrual Care',
-      subheadline: 'Innovative, sustainable, and accessible solutions for everyone',
-      cta: {
-        primary: 'Explore Products',
-        secondary: 'Learn More'
-      }
-    }
-  },
-  zh: {
-    navigation: {
-      home: '首页',
-      products: '产品',
-      locations: '位置',
-      impact: '影响',
-      education: '教育'
-    },
-    hero: {
-      headline: '革新月经护理',
-      subheadline: '创新、可持续、人人可及的解决方案',
-      cta: {
-        primary: '探索产品',
-        secondary: '了解更多'
-      }
-    }
-  }
-};
+type TranslationKeys = NestedKeyOf<typeof translations.en>;
 
 export function useTranslation() {
   const { language } = useLanguage();
   
-  return {
-    t: (key: string): string => {
+  const t = (key: TranslationKeys): string => {
+    try {
       const keys = key.split('.');
-      let value: any = translations[language];
+      let value: any = translations[language as Language];
+      
       for (const k of keys) {
-        value = value?.[k];
+        value = value[k];
       }
-      return value || key;
+      
+      if (value === undefined) {
+        console.warn(`Translation key not found: ${key}`);
+        return key;
+      }
+      
+      return value;
+    } catch (error) {
+      console.error(`Translation error for key: ${key}`, error);
+      return key;
     }
   };
+
+  return { t, language };
 } 

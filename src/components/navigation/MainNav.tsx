@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useNavigationStore } from '@/store/navigation';
 import { MobileNav } from './MobileNav';
-import { LanguageSwitch } from './LanguageSwitch';
+import { LanguageSwitch } from '@/components/ui/language-switch';
 import { navItems } from '@/lib/constants';
 import { useTranslation } from '@/lib/translate';
 

@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Tab } from '@headlessui/react';
 import { Card } from '@/components/ui/card';
 import { ProductImageViewer } from './ProductImageViewer';
+import { useTranslation } from '@/lib/translate';
 import type { ProductDetails } from '@/types/product';
 
 const productDetails: ProductDetails = {
@@ -57,6 +58,7 @@ const productImages = [
 
 export const ProductShowcase = () => {
   const [selectedImage, setSelectedImage] = useState(0);
+  const { t } = useTranslation();
 
   return (
     <section className="min-h-screen py-20 bg-background">
@@ -68,9 +70,11 @@ export const ProductShowcase = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-brand-primary-800 mb-4">Our Products</h2>
+          <h2 className="text-brand-primary-800 mb-4">
+            {t('products.title')}
+          </h2>
           <p className="text-brand-neutral-500 max-w-2xl mx-auto">
-            Discover our innovative solutions for modern menstrual care
+            {t('products.subtitle')}
           </p>
         </motion.div>
 
@@ -91,12 +95,12 @@ export const ProductShowcase = () => {
                 {productDetails.name}
               </h3>
               <p className="text-brand-neutral-500 mb-6">
-                {productDetails.description}
+                {t('products.description')}
               </p>
               
               <Tab.Group>
                 <Tab.List className="flex space-x-1 rounded-lg bg-brand-neutral-50 p-1 mb-6">
-                  {['Features', 'Specifications', 'Impact'].map((category) => (
+                  {['features', 'specifications', 'impact'].map((category) => (
                     <Tab
                       key={category}
                       className={({ selected }) =>
@@ -107,22 +111,22 @@ export const ProductShowcase = () => {
                         }`
                       }
                     >
-                      {category}
+                      {t(`products.tabs.${category}`)}
                     </Tab>
                   ))}
                 </Tab.List>
                 <Tab.Panels>
                   <Tab.Panel className="space-y-4">
-                    {productDetails.features.map((feature, index) => (
+                    {['eco', 'smart', 'easy'].map((feature) => (
                       <Card
-                        key={index}
+                        key={feature}
                         className="p-4 cursor-pointer hover:shadow-md transition-shadow"
                       >
                         <h4 className="font-semibold text-brand-primary-700 mb-2">
-                          {feature.title}
+                          {t(`products.features.${feature}.title`)}
                         </h4>
                         <p className="text-sm text-brand-neutral-500">
-                          {feature.description}
+                          {t(`products.features.${feature}.description`)}
                         </p>
                       </Card>
                     ))}
@@ -130,7 +134,9 @@ export const ProductShowcase = () => {
                   <Tab.Panel className="space-y-4">
                     {Object.entries(productDetails.specifications).map(([key, value]) => (
                       <div key={key} className="flex justify-between py-2 border-b border-brand-neutral-100">
-                        <span className="font-medium text-brand-primary-700">{key}</span>
+                        <span className="font-medium text-brand-primary-700">
+                          {t(`products.specifications.${key.toLowerCase().replace(' ', '-')}`)}
+                        </span>
                         <span className="text-brand-neutral-500">{value}</span>
                       </div>
                     ))}
@@ -138,23 +144,29 @@ export const ProductShowcase = () => {
                   <Tab.Panel>
                     <Card className="p-6">
                       <h4 className="font-semibold text-brand-primary-700 mb-4">
-                        Environmental Impact
+                        {t('products.impact.title')}
                       </h4>
                       <div className="space-y-4">
                         <div>
-                          <p className="text-sm text-brand-neutral-500">CO2 Saved</p>
+                          <p className="text-sm text-brand-neutral-500">
+                            {t('products.impact.co2')}
+                          </p>
                           <p className="text-2xl font-bold text-brand-primary-600">
                             {productDetails.environmentalImpact.co2Saved}kg
                           </p>
                         </div>
                         <div>
-                          <p className="text-sm text-brand-neutral-500">Waste Prevented</p>
+                          <p className="text-sm text-brand-neutral-500">
+                            {t('products.impact.waste')}
+                          </p>
                           <p className="text-2xl font-bold text-brand-primary-600">
                             {productDetails.environmentalImpact.wastePrevented}kg
                           </p>
                         </div>
                         <div>
-                          <p className="text-sm text-brand-neutral-500">Water Saved</p>
+                          <p className="text-sm text-brand-neutral-500">
+                            {t('products.impact.water')}
+                          </p>
                           <p className="text-2xl font-bold text-brand-primary-600">
                             {productDetails.environmentalImpact.waterSaved}L
                           </p>

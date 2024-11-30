@@ -1,0 +1,64 @@
+export const zh = {
+  common: {
+    loading: '加载中...',
+    error: '发生错误',
+    notFound: '页面未找到'
+  },
+  navigation: {
+    home: '首页',
+    products: '产品',
+    locations: '位置',
+    impact: '影响',
+    education: '教育'
+  },
+  hero: {
+    headline: '革新月经护理',
+    subheadline: '创新、可持续、人人可及的解决方案',
+    cta: {
+      primary: '探索产品',
+      secondary: '了解更多'
+    }
+  },
+  products: {
+    title: '我们的产品',
+    subtitle: '探索现代月经护理的创新解决方案',
+    description: '革新性的月经护理产品，结合舒适性、可持续性和创新性。',
+    tabs: {
+      features: '特点',
+      specifications: '规格',
+      impact: '环境影响'
+    },
+    features: {
+      eco: {
+        title: '环保材料',
+        description: '采用100%可生物降解材料，减少环境影响。'
+      },
+      smart: {
+        title: '智能吸收',
+        description: '先进技术确保最佳舒适度和保护。'
+      },
+      easy: {
+        title: '简易安装',
+        description: '简单直观的设计，使用无忧。'
+      }
+    },
+    specifications: {
+      material: '材料',
+      duration: '使用时长',
+      'size-options': '尺寸选项',
+      packaging: '包装'
+    },
+    impact: {
+      title: '环境影响',
+      co2: '减少碳排放',
+      waste: '减少废弃物',
+      water: '节约用水'
+    }
+  },
+  locations: {
+    title: '查找我们',
+    loading: '地图加载中...',
+    active: '可用',
+    inactive: '即将开放'
+  }
+} as const; 
