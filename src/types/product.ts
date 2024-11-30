@@ -1,12 +1,11 @@
 export interface ProductView {
-    mode: '3d' | 'gallery' | 'comparison';
+    mode: 'gallery' | 'comparison';
     interactions: {
-      rotate: boolean;
       zoom: boolean;
-      explode: boolean;
+      pan: boolean;
     };
     hotspots: Array<{
-      position: { x: number; y: number; z: number };
+      position: { x: number; y: number };
       content: string;
       type: 'feature' | 'spec' | 'demo';
     }>;
