@@ -23,51 +23,6 @@ export const zh = {
       products: '探索产品'
     }
   },
-  // products: {
-  //   title: '我们的产品',
-  //   subtitle: '探索现代月经护理的创新解决方案',
-  //   description: '革新性的月经护理产品，结合舒适性、可持续性和创新性。',
-  //   tabs: {
-  //     features: '特点',
-  //     specifications: '规格',
-  //     impact: '环境影响'
-  //   },
-  //   features: {
-  //     eco: {
-  //       title: '环保材料',
-  //       description: '采用100%可生物降解材料，减少环境影响。'
-  //     },
-  //     smart: {
-  //       title: '智能吸收',
-  //       description: '先进技术确保最佳舒适度和保护。'
-  //     },
-  //     easy: {
-  //       title: '简易安装',
-  //       description: '简单直观的设计，使用无忧。'
-  //     }
-  //   },
-  //   specifications: {
-  //     material: '材料',
-  //     duration: '使用时长',
-  //     'size-options': '尺寸选项',
-  //     packaging: '包装'
-  //   },
-  //   impact: {
-  //     title: '环境影响',
-  //     co2: '减少碳排放',
-  //     waste: '减少废弃物',
-  //     water: '节约用水'
-  //   },
-  //   grid: {
-  //     title: '我们的产品',
-  //     subtitle: '探索我们完整的月经护理解决方案',
-  //     categories: {
-  //       all: '所有产品',
-  //       dispenser: '分配器',
-  //       refill: '补充装'
-  //     }
-  //   }
-  // },
 
   products: {
     evolution: {

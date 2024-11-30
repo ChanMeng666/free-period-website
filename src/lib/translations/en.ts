@@ -23,51 +23,6 @@ export const en = {
       products: 'Explore Products'
     }
   },
-  // products: {
-  //   title: 'Our Products',
-  //   subtitle: 'Discover our innovative solutions for modern menstrual care',
-  //   description: 'A revolutionary menstrual care product that combines comfort, sustainability, and innovation.',
-  //   tabs: {
-  //     features: 'Features',
-  //     specifications: 'Specifications',
-  //     impact: 'Environmental Impact'
-  //   },
-  //   features: {
-  //     eco: {
-  //       title: 'Eco-Friendly Material',
-  //       description: 'Made from 100% biodegradable materials, reducing environmental impact.'
-  //     },
-  //     smart: {
-  //       title: 'Smart Absorption',
-  //       description: 'Advanced technology for optimal comfort and protection.'
-  //     },
-  //     easy: {
-  //       title: 'Easy Installation',
-  //       description: 'Simple and intuitive design for hassle-free use.'
-  //     }
-  //   },
-  //   specifications: {
-  //     material: 'Material',
-  //     duration: 'Duration',
-  //     'size-options': 'Size Options',
-  //     packaging: 'Packaging'
-  //   },
-  //   impact: {
-  //     title: 'Environmental Impact',
-  //     co2: 'CO2 Saved',
-  //     waste: 'Waste Prevented',
-  //     water: 'Water Saved'
-  //   },
-  //   grid: {
-  //     title: 'Our Products',
-  //     subtitle: 'Discover our complete range of menstrual care solutions',
-  //     categories: {
-  //       all: 'All Products',
-  //       dispenser: 'Dispensers',
-  //       refill: 'Refills'
-  //     }
-  //   }
-  // },
 
   products: {
     evolution: {
@@ -105,7 +60,7 @@ export const en = {
       emissions: "Carbon Emissions"
     }
   },
-  
+
   locations: {
     title: 'Find Our Locations',
     subtitle: 'Discover FreePeriod dispensers near you',
