@@ -8,14 +8,7 @@ const nextConfig = {
     // 在生产构建时忽略TypeScript错误
     ignoreBuildErrors: true,
   },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader', 'postcss-loader'],
-    });
-    return config;
-  },
-  optimizeFonts: false,
+  optimizeFonts: true,
   poweredByHeader: false,
 };
 
