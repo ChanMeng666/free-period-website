@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { useNavigationStore } from '@/store/navigation';
 import { MobileNav } from './MobileNav';
@@ -24,7 +26,8 @@ const navAnimation = {
 };
 
 export const MainNav = () => {
-  const { isScrolled, currentSection } = useNavigationStore();
+  const { isScrolled } = useNavigationStore();
+  const pathname = usePathname();
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -49,8 +52,17 @@ export const MainNav = () => {
     >
       <div className="container mx-auto px-4">
         <nav className="h-16 flex items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-brand-primary-800">
-            FreePeriod
+          <Link href="/" className="flex items-center gap-2">
+            <Image 
+              src="/images/FreePeriodLogo.png"
+              alt="FreePeriod Logo"
+              width={32}
+              height={32}
+              className="object-contain"
+            />
+            <span className="text-xl font-bold text-brand-primary-800">
+              FreePeriod
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -60,7 +72,7 @@ export const MainNav = () => {
                 <Link
                   href={item.href}
                   className={`text-sm font-medium transition-colors hover:text-brand-primary-600
-                    ${currentSection === item.label.toLowerCase()
+                    ${pathname === item.href
                       ? 'text-brand-primary-700'
                       : 'text-brand-neutral-500'
                     }`}
