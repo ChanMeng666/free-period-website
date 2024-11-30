@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ParticlesBackground } from '@/components/ui/particles';
 import { useTranslation } from '@/lib/translate';
+import Link from 'next/link';
 
 export const Hero = () => {
   const { t } = useTranslation();
@@ -57,19 +58,23 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <Button 
-            size="lg" 
-            className="bg-brand-primary-500 hover:bg-brand-primary-600 text-white"
-          >
-            {t('hero.cta.primary')}
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-brand-primary-200 text-brand-primary-700 hover:bg-brand-primary-50"
-          >
-            {t('hero.cta.secondary')}
-          </Button>
+          <Link href="/auth/register">
+            <Button 
+              size="lg" 
+              className="bg-brand-primary-500 hover:bg-brand-primary-600 text-white w-full sm:w-auto"
+            >
+              {t('hero.cta.register')}
+            </Button>
+          </Link>
+          <Link href="/products">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-brand-primary-200 text-brand-primary-700 hover:bg-brand-primary-50 w-full sm:w-auto"
+            >
+              {t('hero.cta.products')}
+            </Button>
+          </Link>
         </motion.div>
       </motion.div>
     </motion.div>

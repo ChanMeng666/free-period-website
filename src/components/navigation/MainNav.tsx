@@ -8,6 +8,7 @@ import { MobileNav } from './MobileNav';
 import { LanguageSwitch } from '@/components/ui/language-switch';
 import { navItems } from '@/lib/constants';
 import { useTranslation } from '@/lib/translate';
+import { AuthButtons } from './AuthButtons';
 
 const navAnimation = {
   initial: { y: -100, opacity: 0 },
@@ -72,6 +73,9 @@ export const MainNav = () => {
 
           <div className="flex items-center gap-4">
             <LanguageSwitch />
+            <div className="hidden lg:block">
+              <AuthButtons />
+            </div>
             <MobileNav />
           </div>
         </nav>

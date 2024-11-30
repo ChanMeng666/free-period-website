@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { navItems } from '@/lib/constants';
+import { useTranslation } from '@/lib/translate';
 
 const menuVariants = {
   closed: {
@@ -41,6 +42,7 @@ const menuItemVariants = {
 
 export const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div className="lg:hidden">
@@ -81,6 +83,26 @@ export const MobileNav = () => {
                   </Link>
                 </motion.div>
               ))}
+              <motion.div
+                className="mt-8 flex flex-col items-center gap-4"
+                variants={menuItemVariants}
+                custom={navItems.length}
+              >
+                <Link
+                  href="/auth/login"
+                  className="text-lg text-brand-primary-600 hover:text-brand-primary-500"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('navigation.login')}
+                </Link>
+                <Link
+                  href="/auth/register"
+                  className="px-6 py-2 bg-brand-primary-500 text-white rounded-md hover:bg-brand-primary-600"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {t('navigation.register')}
+                </Link>
+              </motion.div>
             </nav>
           </motion.div>
         )}
