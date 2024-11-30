@@ -1,0 +1,45 @@
+{
+  "navigation": {
+    "home": "首页",
+    "products": "产品",
+    "locations": "位置",
+    "impact": "影响",
+    "education": "教育"
+  },
+  "hero": {
+    "headline": "革新月经护理",
+    "subheadline": "创新、可持续、人人可及的解决方案",
+    "cta": {
+      "primary": "探索产品",
+      "secondary": "了解更多"
+    }
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "探索现代月经护理的创新解决方案",
+    "features": {
+      "eco": {
+        "title": "环保材料",
+        "description": "采用100%可生物降解材料，减少环境影响。"
+      },
+      "smart": {
+        "title": "智能吸收",
+        "description": "先进技术确保最佳舒适度和保护。"
+      },
+      "easy": {
+        "title": "简易安装",
+        "description": "简单直观的设计，使用无忧。"
+      }
+    },
+    "tabs": {
+      "features": "特点",
+      "specifications": "规格",
+      "impact": "影响"
+    },
+    "impact": {
+      "co2": "减少碳排放",
+      "waste": "减少废弃物",
+      "water": "节约用水"
+    }
+  }
+} 

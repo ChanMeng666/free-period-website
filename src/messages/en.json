@@ -1,0 +1,45 @@
+{
+  "navigation": {
+    "home": "Home",
+    "products": "Products",
+    "locations": "Locations",
+    "impact": "Impact",
+    "education": "Education"
+  },
+  "hero": {
+    "headline": "Revolutionizing Menstrual Care",
+    "subheadline": "Innovative, sustainable, and accessible solutions for everyone",
+    "cta": {
+      "primary": "Explore Products",
+      "secondary": "Learn More"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Discover our innovative solutions for modern menstrual care",
+    "features": {
+      "eco": {
+        "title": "Eco-Friendly Material",
+        "description": "Made from 100% biodegradable materials, reducing environmental impact."
+      },
+      "smart": {
+        "title": "Smart Absorption",
+        "description": "Advanced technology for optimal comfort and protection."
+      },
+      "easy": {
+        "title": "Easy Installation",
+        "description": "Simple and intuitive design for hassle-free use."
+      }
+    },
+    "tabs": {
+      "features": "Features",
+      "specifications": "Specifications",
+      "impact": "Impact"
+    },
+    "impact": {
+      "co2": "CO2 Saved",
+      "waste": "Waste Prevented",
+      "water": "Water Saved"
+    }
+  }
+} 
