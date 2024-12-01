@@ -368,11 +368,19 @@ const productImages: ProductImagesType = {
   ],
   v2: [
     {
-      src: '/images/prototype-front.jpg',
+      src: '/article/solar-panel-setup.jpg',
       alt: 'FreePeriod 2.0 Prototype Front View'
     },
     {
-      src: '/images/prototype-internal.jpg',
+      src: '/article/mobile-payment.jpg',
+      alt: 'FreePeriod 2.0 Internal Components'
+    },
+    {
+      src: '/article/scanning-demo-1.jpg',
+      alt: 'FreePeriod 2.0 Internal Components'
+    },
+    {
+      src: '/article/solar-panel-demo-1.jpg',
       alt: 'FreePeriod 2.0 Internal Components'
     }
   ]

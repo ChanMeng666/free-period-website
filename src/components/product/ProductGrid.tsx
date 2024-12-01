@@ -9,21 +9,21 @@ const products = [
     id: 1,
     name: 'FreePeriod Essential',
     description: 'Our flagship product with advanced features',
-    image: '/images/product-1.jpg',
+    image: '/images/packaged-roll.jpg',
     category: 'dispenser'
   },
   {
     id: 2,
     name: 'FreePeriod Mini',
     description: 'Compact solution for smaller spaces',
-    image: '/images/product-2.jpg',
+    image: '/images/unpackaged-pad.jpg',
     category: 'dispenser'
   },
   {
     id: 3,
     name: 'FreePeriod Pro',
     description: 'Enterprise-grade solution with enhanced capacity',
-    image: '/images/product-3.jpg',
+    image: '/images/dispenser-front.jpg',
     category: 'dispenser'
   }
 ];

@@ -73,7 +73,7 @@ export function ResourceGrid() {
           >
             <div className="relative h-48">
               <Image
-                src={`/article/${resource.type}-${resource.id}.jpg`}
+                src={`/images/education-${resource.id}.jpg`}
                 alt={resource.title}
                 fill
                 className="object-cover rounded-t-lg"
