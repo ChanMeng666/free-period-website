@@ -41,5 +41,25 @@
       "waste": "Waste Prevented",
       "water": "Water Saved"
     }
+  },
+  "locations": {
+    "loading": "Loading map...",
+    "map": {
+      "center": "Center Map"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "coming": "Coming Soon"
+    },
+    "type": {
+      "hospital": "Hospital",
+      "mall": "Mall",
+      "school": "School",
+      "office": "Office"
+    },
+    "lastRefill": "Last Refill",
+    "available": "Available Units",
+    "getDirections": "Get Directions"
   }
 } 

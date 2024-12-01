@@ -41,5 +41,25 @@
       "waste": "减少废弃物",
       "water": "节约用水"
     }
+  },
+  "locations": {
+    "loading": "加载地图中...",
+    "map": {
+      "center": "居中地图"
+    },
+    "status": {
+      "active": "使用中",
+      "inactive": "未使用",
+      "coming": "即将到来"
+    },
+    "type": {
+      "hospital": "医院",
+      "mall": "商场",
+      "school": "学校",
+      "office": "办公室"
+    },
+    "lastRefill": "最后补充",
+    "available": "可用数量",
+    "getDirections": "获取路线"
   }
 } 
