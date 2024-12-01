@@ -66,11 +66,11 @@ export function Footer() {
             {/* Brand */}
             <div className="space-y-8">
               <Image
-                src="/images/FreePeriodLogo.png"
+                src="/images/main-logo.png"
                 alt="FreePeriod Logo"
                 width={120}
                 height={40}
-                className="h-10 w-auto"
+                className="h-20 w-auto"
               />
               <div className="flex space-x-6">
                 {socialLinks.map((item) => (
