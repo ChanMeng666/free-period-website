@@ -541,11 +541,21 @@ export const en = {
     hero: {
       title: "Smart Sustainable Solutions",
       subtitle: "Eco-friendly menstrual care accessible to all",
+      // v1: {
+      //   description: "Revolutionary solar-powered dispenser with high capacity storage",
+      // },
+      // v2: {
+      //   description: "Next-generation single pad dispenser with enhanced features"
+      // }
       v1: {
-        description: "Revolutionary solar-powered dispenser with high capacity storage",
+        title: "FreePeriod Roll Model",
+        description: "360-pad capacity with solar power",
+        badge: "Most Popular"
       },
       v2: {
-        description: "Next-generation single pad dispenser with enhanced features"
+        title: "FreePeriod Single Model", 
+        description: "Single-pad dispenser with brand options",
+        badge: "New Release"
       }
     }
   },
@@ -575,6 +585,7 @@ export const en = {
     details: {
       lastRefill: 'Last Refill',
       available: 'Available Units',
+      units: "units in stock",
       getDirections: 'Get Directions',
       operatingHours: 'Operating Hours',
       contact: 'Contact Information'
@@ -614,6 +625,24 @@ export const en = {
         title: 'Stations Deployed',
         description: '20+ locations and expanding',
         trend: 'Rapid growth'
+      },
+      activeUsers: {
+        title: "Active Users",
+        description: "Growing community of monthly users",
+        lastMonth: "10% increase from last month",
+        total: "50,000+ active users"
+      },
+      energyReduction: {
+        title: "Energy Reduction",
+        description: "Compared to traditional dispensers",
+        lastMonth: "98.5% less energy consumption",
+        total: "15W vs 1000W traditional"
+      },
+      co2Saved: {
+        title: "CO2 Saved",
+        description: "Reduction in carbon emissions",
+        lastMonth: "1786kg CO2 reduction per unit",
+        total: "27.2 vs 1,814 kgCO2e/year"
       }
     },
     chart: {

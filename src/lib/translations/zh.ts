@@ -539,11 +539,21 @@ export const zh = {
     hero: {
       title: "智能可持续解决方案",
       subtitle: "环保型月经护理产品，人人可及",
+      // v1: {
+      //   description: "革命性太阳能分发器，大容量储存",
+      // },
+      // v2: {
+      //   description: "下一代单片分发器，增强功能"
+      // }
       v1: {
-        description: "革命性太阳能分发器，大容量储存",
+        title: "FreePeriod 卷装型号",
+        description: "360片容量太阳能供电",
+        badge: "最受欢迎"
       },
       v2: {
-        description: "下一代单片分发器，增强功能"
+        title: "FreePeriod 单片型号",
+        description: "单片分发多品牌选择",
+        badge: "全新上市"
       }
     }
   },
@@ -571,11 +581,12 @@ export const zh = {
       maintenance: '维护中'
     },
     details: {
-      lastRefill: '最近补货',
-      available: '可用数量',
-      getDirections: '获取路线',
-      operatingHours: '运营时间',
-      contact: '联系方式'
+      lastRefill: "最近补货",
+      available: "当前库存",
+      units: "库存单位",
+      getDirections: "获取路线",
+      operatingHours: "运营时间",
+      contact: "联系方式"
     },
     filters: {
       title: '筛选位置',
@@ -612,6 +623,24 @@ export const zh = {
         title: '已部署站点',
         description: '20+个位置并持续扩展',
         trend: '快速增长'
+      },
+      activeUsers: {
+        title: "活跃用户",
+        description: "月度用户群持续增长",
+        lastMonth: "较上月增长10%",
+        total: "超过50,000位活跃用户"
+      },
+      energyReduction: {
+        title: "节能减排",
+        description: "相比传统分发器",
+        lastMonth: "节省98.5%能耗",
+        total: "15W对比传统1000W"
+      },
+      co2Saved: {
+        title: "碳减排",
+        description: "减少碳排放",
+        lastMonth: "每台减少1786kg碳排放",
+        total: "年碳排放27.2对比1,814 kgCO2e"
       }
     },
     chart: {
