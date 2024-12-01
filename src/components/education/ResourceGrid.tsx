@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/card';
 import { VideoPlayer } from '@/components/ui/video-player';
 import { useTranslation } from '@/lib/translate';
 import { FileText, Video, Play } from 'lucide-react';
+import Image from 'next/image';
 
 const resources = [
   {
@@ -70,6 +71,14 @@ export function ResourceGrid() {
             }`}
             onClick={() => handleCardClick(resource)}
           >
+            <div className="relative h-48">
+              <Image
+                src={`/article/${resource.type}-${resource.id}.jpg`}
+                alt={resource.title}
+                fill
+                className="object-cover rounded-t-lg"
+              />
+            </div>
             <div className="flex items-center gap-4 mb-4">
               <div className="p-2 rounded-full bg-brand-primary-50">
                 <resource.icon className="h-6 w-6 text-brand-primary-500" />

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useTranslation } from '@/lib/translate';
 import { motion } from 'framer-motion';
 import { Github, Twitter, Mail, Instagram } from 'lucide-react';
+import Image from 'next/image';
 
 const socialLinks = [
   {
@@ -64,9 +65,11 @@ export function Footer() {
           >
             {/* Brand */}
             <div className="space-y-8">
-              <img
+              <Image
                 src="/images/FreePeriodLogo.png"
                 alt="FreePeriod Logo"
+                width={120}
+                height={40}
                 className="h-10 w-auto"
               />
               <div className="flex space-x-6">
