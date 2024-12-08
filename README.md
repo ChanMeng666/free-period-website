@@ -1,4 +1,7 @@
-# FreePeriod
+<div align="center">
+ <h1><img src="public/images/main-logo.png" width="80px"><br/>FreePeriod</h1>
+</div>
+<br/>
 
 <div align="center">
 
@@ -87,7 +90,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [Apache-2.0 license](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -96,10 +99,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 
-## 📫 Author
+## 📫 Contact
 
 **Chan Meng**
 
 - LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
 - GitHub: [ChanMeng666](https://github.com/ChanMeng666)
-
