@@ -20,8 +20,8 @@ export const locations: Location[] = [
     name: '香港科技大学',
     address: '广州市南沙区笃学路1号',
     position: {
-      lat: 113.48,
-      lng: 22.89
+      lat: 22.89,
+      lng: 113.48
     },
     type: 'school',
     status: 'active',
