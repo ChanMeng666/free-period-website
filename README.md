@@ -15,6 +15,10 @@ A modern web platform for sustainable menstrual care solutions, built with Next.
 
 </div>
 
+
+https://github.com/user-attachments/assets/2820ff83-e6cf-4cd4-804c-002bc7631260
+
+
 ![screencapture-free-period-website-vercel-app-2024-12-08-18_14_26](https://github.com/user-attachments/assets/28795c2b-2256-4711-a511-02fb6f8b978a)
 
 ![屏幕截图 2024-12-06 113723](https://github.com/user-attachments/assets/8ff918ce-330c-401d-a493-639a2f82ad96)
