@@ -13,6 +13,23 @@ const nextConfig = {
   images: {
     unoptimized: process.env.NODE_ENV === 'development',
   },
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Content-Security-Policy',
+            value: "frame-ancestors 'self' https://calendar.google.com",
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'ALLOW-FROM https://calendar.google.com',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig; 
