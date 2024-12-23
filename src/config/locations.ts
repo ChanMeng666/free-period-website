@@ -18,25 +18,40 @@ export const locations: Location[] = [
   {
     id: '2',
     name: '香港科技大学',
-    address: '广州市南沙区笃学路1号',
+    address: 'Nansha District, Guangzhou, Guangdong Province, China, 511453',
     position: {
-      lat: 22.89,
-      lng: 113.48
+      lat: 22.886614568666317,
+      lng: 113.47847276675165
     },
     type: 'school',
     status: 'active',
     lastRefill: '2024-12-12',
-    availableUnits: 98
+    availableUnits: 99
   },
   {
     id: '3',
-    name: '香港大学',
-    address: '香港薄扶林道',
+    name: '德艺融',
+    address: 'Shunde District, Foshan, Guangdong Province, China, 528300',
     position: {
-      lat: 22.2829,
-      lng: 114.1367
+      lat: 22.83327569926313,
+      lng: 113.25417633104051
     },
-    type: 'school',
+    type: 'mall',
+    status: 'active',
+    lastRefill: '2024-12-12',
+    availableUnits: 99
+  },
+  {
+    id: '4',
+    name: '美林广场',
+    address: 'Panyu District, Guangzhou, Guangdong Province, China, 511453',
+    position: {
+      lat: 22.876481627144045,
+      lng: 113.47682565392921
+    },
+    type: 'mall',
     status: 'coming',
+    lastRefill: '2024-12-12',
+    availableUnits: 99
   }
 ];

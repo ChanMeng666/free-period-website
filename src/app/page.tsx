@@ -8,6 +8,7 @@ import { LocationMap } from '@/components/map/LocationMap';
 import { FeatureGrid } from '@/components/layout/FeatureGrid';
 import { useTranslation } from '@/lib/translate';
 import { Button } from '@/components/ui/button';
+import { locations as initialLocations } from '@/config/locations';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -84,7 +85,10 @@ export default function Home() {
               {t('home.locations.subtitle')}
             </p>
           </motion.div>
-          <LocationMap />
+          <LocationMap 
+            locations={initialLocations}
+            zoom={10}
+          />
         </div>
       </section>
 

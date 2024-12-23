@@ -148,7 +148,8 @@ export const en = {
       placeholder: 'Search by location or address...',
       useLocation: 'Use my location',
       noResults: 'No locations found',
-      error: 'Error finding locations'
+      error: 'Error finding locations',
+      tryAdjustingSearch: 'Try adjusting your search criteria'
     },
     type: {
       hospital: 'Hospital',

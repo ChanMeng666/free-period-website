@@ -148,7 +148,8 @@ export const zh = {
       placeholder: '搜索位置或地址...',
       useLocation: '使用我的位置',
       noResults: '未找到站点',
-      error: '查找位置时出错'
+      error: '查找位置时出错',
+      tryAdjustingSearch: '请尝试调整搜索条件'
     },
     type: {
       hospital: '医院',
