@@ -2,7 +2,8 @@ export const zh = {
   common: {
     loading: '加载中...',
     error: '发生错误',
-    notFound: '页面未找到'
+    notFound: '页面未找到',
+    language: 'zh-CN'
   },
   navigation: {
     home: '首页',
@@ -255,6 +256,12 @@ export const zh = {
       up: '↑ 上升',
       down: '↓ 下降',
       stable: '→ 稳定'
+    },
+    calendar: {
+      title: '活动日程',
+      upcoming: '即将举行的活动',
+      past: '往期活动',
+      noEvents: '暂无活动安排'
     }
   },
   education: {

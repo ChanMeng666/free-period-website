@@ -2,7 +2,8 @@ export const en = {
   common: {
     loading: 'Loading...',
     error: 'An error occurred',
-    notFound: 'Page not found'
+    notFound: 'Page not found',
+    language: 'en'
   },
   navigation: {
     home: 'Home',
@@ -255,6 +256,12 @@ export const en = {
       up: '↑ Increasing',
       down: '↓ Decreasing',
       stable: '→ Stable'
+    },
+    calendar: {
+      title: 'Event Calendar',
+      upcoming: 'Upcoming Events',
+      past: 'Past Events',
+      noEvents: 'No events scheduled'
     }
   },
   education: {

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ImpactMetrics } from '@/components/impact/ImpactMetrics';
 import { ImpactStories } from '@/components/impact/ImpactStories';
 import { ImpactChart } from '@/components/impact/ImpactChart';
+import { ImpactCalendar } from '@/components/impact/ImpactCalendar';
 import { useTranslation } from '@/lib/translate';
 
 export default function ImpactPage() {
@@ -26,6 +27,7 @@ export default function ImpactPage() {
 
         <ImpactMetrics />
         <ImpactChart />
+        <ImpactCalendar />
         <ImpactStories />
       </section>
     </div>
