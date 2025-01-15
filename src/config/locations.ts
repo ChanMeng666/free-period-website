@@ -30,28 +30,15 @@ export const locations: Location[] = [
   },
   {
     id: '3',
-    name: '德艺融',
-    address: 'Shunde District, Foshan, Guangdong Province, China, 528300',
+    name: '侨邦·国际公寓',
+    address: 'No. 13, Rongqi Avenue, Shunde District, Foshan City, Guangdong Province, China, 528300',
     position: {
-      lat: 22.83327569926313,
-      lng: 113.25417633104051
+      lat: 22.78,
+      lng: 113.28
     },
     type: 'mall',
     status: 'active',
-    lastRefill: '2024-12-12',
-    availableUnits: 99
-  },
-  {
-    id: '4',
-    name: '美林广场',
-    address: 'Panyu District, Guangzhou, Guangdong Province, China, 511453',
-    position: {
-      lat: 22.876481627144045,
-      lng: 113.47682565392921
-    },
-    type: 'mall',
-    status: 'coming',
-    lastRefill: '2024-12-12',
+    lastRefill: '2025-01-15',
     availableUnits: 99
   }
 ];
