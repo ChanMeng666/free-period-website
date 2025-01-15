@@ -3,29 +3,19 @@
 import Link from 'next/link';
 import { useTranslation } from '@/lib/translate';
 import { motion } from 'framer-motion';
-import { Github, Twitter, Mail, Instagram } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 
 const socialLinks = [
   {
     name: 'GitHub',
-    href: 'https://github.com/your-github',
+    href: 'https://github.com/ChanMeng666',
     icon: Github
   },
   {
-    name: 'Twitter',
-    href: 'https://twitter.com/your-twitter',
-    icon: Twitter
-  },
-  {
-    name: 'Instagram',
-    href: 'https://instagram.com/your-instagram',
-    icon: Instagram
-  },
-  {
-    name: 'Email',
-    href: 'mailto:contact@example.com',
-    icon: Mail
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/free-period/',
+    icon: Linkedin
   }
 ];
 
