@@ -11,7 +11,7 @@ export function ProductHero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-brand-primary-50 to-brand-secondary-50">
+    <section className="relative min-h-[65vh] flex items-center justify-center bg-gradient-to-br from-brand-primary-50 to-brand-secondary-50 py-16">
       <div className="absolute inset-0 bg-grid-pattern opacity-5" />
       
       <motion.div
@@ -20,15 +20,15 @@ export function ProductHero() {
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4 text-center relative z-10"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-brand-primary-800 mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold text-brand-primary-800 mb-8">
           {t('products.hero.title')}
         </h1>
         
-        <p className="text-xl text-brand-neutral-500 max-w-2xl mx-auto mb-8">
+        <p className="text-xl text-brand-neutral-500 max-w-2xl mx-auto mb-10">
           {t('products.hero.subtitle')}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
           <div className="flex items-center gap-2 text-green-600">
             <Battery className="h-5 w-5" />
             <span className="text-sm font-medium">15W Power Consumption</span>
@@ -40,9 +40,9 @@ export function ProductHero() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto text-left">
-          <Card className="p-6 bg-white bg-opacity-90">
-            <h3 className="font-semibold text-brand-primary-700 mb-2">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto text-left">
+          <Card className="p-8 bg-white bg-opacity-90">
+            <h3 className="font-semibold text-brand-primary-700 mb-3">
               {t('products.hero.v1.title')}
             </h3>
             <p className="text-sm text-brand-neutral-500">
@@ -50,8 +50,8 @@ export function ProductHero() {
             </p>
           </Card>
           
-          <Card className="p-6 bg-brand-primary-50 bg-opacity-90">
-            <div className="flex items-center justify-between mb-2">
+          <Card className="p-8 bg-brand-primary-50 bg-opacity-90">
+            <div className="flex items-center justify-between mb-3">
               <h3 className="font-semibold text-brand-primary-700">
                 {t('products.hero.v2.title')}
               </h3>

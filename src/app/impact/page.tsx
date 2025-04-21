@@ -6,12 +6,13 @@ import { ImpactStories } from '@/components/impact/ImpactStories';
 import { ImpactChart } from '@/components/impact/ImpactChart';
 import { ImpactCalendar } from '@/components/impact/ImpactCalendar';
 import { useTranslation } from '@/lib/translate';
+import { PageContainer } from '@/components/layout/PageContainer';
 
 export default function ImpactPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen">
+    <PageContainer>
       <section className="container mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -30,6 +31,6 @@ export default function ImpactPage() {
         <ImpactCalendar />
         <ImpactStories />
       </section>
-    </div>
+    </PageContainer>
   );
 } 

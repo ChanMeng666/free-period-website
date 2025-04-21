@@ -5,12 +5,13 @@ import { ResourceGrid } from '@/components/education/ResourceGrid';
 import { FAQSection } from '@/components/education/FAQSection';
 import { DownloadSection } from '@/components/education/DownloadSection';
 import { useTranslation } from '@/lib/translate';
+import { PageContainer } from '@/components/layout/PageContainer';
 
 export default function EducationPage() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen">
+    <PageContainer>
       <section className="container mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,6 +29,6 @@ export default function EducationPage() {
         <DownloadSection />
         <FAQSection />
       </section>
-    </div>
+    </PageContainer>
   );
 } 

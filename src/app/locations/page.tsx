@@ -74,6 +74,7 @@ import { useTranslation } from '@/lib/translate';
 import { locations as initialLocations } from '@/config/locations';
 import { useState } from 'react';
 import type { Location } from '@/types/location';
+import { PageContainer } from '@/components/layout/PageContainer';
 
 export default function LocationsPage() {
   const { t } = useTranslation();
@@ -81,7 +82,7 @@ export default function LocationsPage() {
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
 
   return (
-    <div className="min-h-screen">
+    <PageContainer>
       <section className="container mx-auto px-4 py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -118,6 +119,6 @@ export default function LocationsPage() {
           />
         </div>
       </section>
-    </div>
+    </PageContainer>
   );
 }

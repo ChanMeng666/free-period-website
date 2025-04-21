@@ -127,18 +127,21 @@ export const zh = {
       }
     },
     hero: {
-      title: "智能可持续解决方案",
-      subtitle: "环保型月经护理产品，人人可及",
+      title: '我们的产品线',
+      subtitle: '探索我们专为可访问性和可持续性设计的月经产品分配器系列。',
       v1: {
-        title: "FreePeriod 卷装型号",
-        description: "360片容量太阳能供电",
-        badge: "最受欢迎"
+        title: '版本 1.0',
+        description: '我们的标准型号具备可靠分配月经产品的基本功能。'
       },
       v2: {
-        title: "FreePeriod 单片型号",
-        description: "单片分发多品牌选择",
-        badge: "全新上市"
+        title: '版本 2.0',
+        description: '高级型号，具有增强的容量和适用于高流量区域的智能功能。',
+        badge: '新品'
       }
+    },
+    demo: {
+      title: 'FreePeriod演示视频',
+      subtitle: '观看我们的产品演示，了解FreePeriod的实际应用。'
     }
   },
 

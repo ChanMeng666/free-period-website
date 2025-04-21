@@ -22,7 +22,8 @@ const resources = [
     description: 'tutorial.description',
     type: 'video' as const,
     icon: Video,
-    videoUrl: '/videos/VideoTutorial.mp4'
+    videoUrl: 'https://youtube.com/shorts/U98q0ukeg44?si=R47MmWC5h_5Yz27D',
+    isYouTube: true
   },
   {
     id: 3,
@@ -30,7 +31,9 @@ const resources = [
     description: 'workshop.description',
     type: 'video' as const,
     icon: Play,
-    videoUrl: '/videos/OnlineWorkshop.mp4'
+    videoUrl: 'https://www.youtube.com/embed/Q3O7qJqfmmo?si=ZBe9sAusL3bKQlFf',
+    isYouTube: true,
+    isYouTubeEmbed: true
   }
 ] as const;
 
@@ -41,6 +44,8 @@ export function ResourceGrid() {
   const [selectedVideo, setSelectedVideo] = useState<{
     url: string;
     title: string;
+    isYouTube?: boolean;
+    isYouTubeEmbed?: boolean;
   } | null>(null);
 
   const getTranslation = (key: ResourceType['title'], type: 'title' | 'description') => {
@@ -51,7 +56,9 @@ export function ResourceGrid() {
     if (resource.type === 'video' && resource.videoUrl) {
       setSelectedVideo({
         url: resource.videoUrl,
-        title: getTranslation(resource.title, 'title')
+        title: getTranslation(resource.title, 'title'),
+        isYouTube: 'isYouTube' in resource ? resource.isYouTube : undefined,
+        isYouTubeEmbed: 'isYouTubeEmbed' in resource ? resource.isYouTubeEmbed : undefined
       });
     }
   };
@@ -100,6 +107,8 @@ export function ResourceGrid() {
           onClose={() => setSelectedVideo(null)}
           videoUrl={selectedVideo.url}
           title={selectedVideo.title}
+          isYouTube={selectedVideo.isYouTube}
+          isYouTubeEmbed={selectedVideo.isYouTubeEmbed}
         />
       )}
     </div>

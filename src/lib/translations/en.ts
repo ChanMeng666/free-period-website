@@ -127,18 +127,21 @@ export const en = {
       }
     },
     hero: {
-      title: "Smart Sustainable Solutions",
-      subtitle: "Eco-friendly menstrual care accessible to all",
+      title: 'Our Product Line',
+      subtitle: 'Discover our range of period product dispensers designed for accessibility and sustainability.',
       v1: {
-        title: "FreePeriod Roll Model",
-        description: "360-pad capacity with solar power",
-        badge: "Most Popular"
+        title: 'Version 1.0',
+        description: 'Our standard model with essential features for reliable dispensing of period products.'
       },
       v2: {
-        title: "FreePeriod Single Model", 
-        description: "Single-pad dispenser with brand options",
-        badge: "New Release"
+        title: 'Version 2.0',
+        description: 'Advanced model with enhanced capacity and smart features for high-traffic areas.',
+        badge: 'New'
       }
+    },
+    demo: {
+      title: 'The Demo Video for FreePeriod',
+      subtitle: 'Watch our product demonstration to see FreePeriod in action.'
     }
   },
 
