@@ -4,12 +4,22 @@ import { ThemeProvider } from '@/contexts/ThemeContext';
 import { MainNav } from '@/components/navigation/MainNav';
 import { Footer } from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import type { Metadata } from 'next';
 import './globals.css';
 
 const plusJakartaSans = Plus_Jakarta_Sans({ 
   subsets: ['latin'],
   variable: '--font-plus-jakarta'
 });
+
+export const metadata: Metadata = {
+  title: 'FreePeriod',
+  description: 'FreePeriod - Making a difference in women\'s health and education',
+  icons: {
+    icon: '/images/main-logo.svg',
+    apple: '/images/main-logo.svg',
+  },
+};
 
 export default function RootLayout({
   children,

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useTranslation } from '@/lib/translate';
 import { motion } from 'framer-motion';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail, Code2 } from 'lucide-react';
 import Image from 'next/image';
 
 const socialLinks = [
@@ -102,17 +102,94 @@ export function Footer() {
             </div>
           </motion.div>
 
+          {/* Developer Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="mt-16 border-t border-brand-neutral-100 dark:border-brand-neutral-800 pt-8"
+          >
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              {/* Developer Brand */}
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/images/chan_logo.svg"
+                  alt="Chan Meng Developer Logo"
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 flex-shrink-0"
+                />
+                <div>
+                  <p className="text-sm font-medium text-brand-neutral-900 dark:text-white">
+                    {t('footer.developer.craftedBy')} <span className="font-semibold">{t('footer.developer.name')}</span>
+                  </p>
+                  <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
+                    {t('footer.developer.title')}
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact & Portfolio */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6">
+                <div className="flex items-center gap-4">
+                  <a
+                    href={`mailto:${t('footer.developer.email')}`}
+                    className="flex items-center gap-2 text-sm text-brand-neutral-600 hover:text-brand-primary-500 dark:text-brand-neutral-400 dark:hover:text-brand-primary-400 transition-colors"
+                  >
+                    <Mail className="h-4 w-4" />
+                    <span>{t('footer.developer.email')}</span>
+                  </a>
+                  <a
+                    href="https://github.com/ChanMeng666"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-brand-neutral-600 hover:text-brand-primary-500 dark:text-brand-neutral-400 dark:hover:text-brand-primary-400 transition-colors"
+                  >
+                    <Github className="h-4 w-4" />
+                    <span>{t('footer.developer.portfolio')}</span>
+                  </a>
+                </div>
+                
+                {/* Subtle CTA */}
+                <div className="text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
+                  <span>{t('footer.developer.cta.question')} </span>
+                  <a
+                    href={`mailto:${t('footer.developer.email')}?subject=${encodeURIComponent(t('footer.developer.emailSubject'))}&body=${encodeURIComponent(t('footer.developer.emailBody'))}`}
+                    className="font-medium text-brand-primary-600 hover:text-brand-primary-700 dark:text-brand-primary-400 dark:hover:text-brand-primary-300 transition-colors"
+                  >
+                    {t('footer.developer.cta.action')}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Copyright */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
-            className="mt-16 border-t border-brand-neutral-100 dark:border-brand-neutral-800 pt-8 sm:mt-20 lg:mt-24"
+            className="mt-8 border-t border-brand-neutral-100 dark:border-brand-neutral-800 pt-6"
           >
-            <p className="text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
-              &copy; {currentYear} FreePeriod
-            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <p className="text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
+                {t('footer.copyright').replace('2024', currentYear.toString())}
+              </p>
+              <div className="flex items-center gap-2 text-xs text-brand-neutral-400 dark:text-brand-neutral-500">
+                <Code2 className="h-3 w-3" />
+                <span>{t('footer.developer.sourceCode')}</span>
+                <a
+                  href="https://github.com/ChanMeng666/free-period-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-primary-600 hover:text-brand-primary-700 dark:text-brand-primary-400 dark:hover:text-brand-primary-300 transition-colors"
+                >
+                  {t('footer.developer.repository')}
+                </a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

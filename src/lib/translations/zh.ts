@@ -434,6 +434,21 @@ export const zh = {
       address: '中国广州',
       hours: '周一至周五 9:00-18:00'
     },
-    copyright: '© 2024 FreePeriod. 保留所有权利。'
+    copyright: '© 2024 FreePeriod. 保留所有权利。',
+    developer: {
+      craftedBy: '精心打造',
+      name: 'Chan Meng',
+      title: '全栈开发工程师 & 数字化解决方案架构师',
+      email: 'chanmeng.dev@gmail.com',
+      portfolio: '作品集',
+      cta: {
+        question: '需要定制网站？',
+        action: '联系我们 →'
+      },
+      sourceCode: '源代码：',
+      repository: 'GitHub 仓库',
+      emailSubject: '网站开发咨询',
+      emailBody: '您好 Chan，我想咨询定制网站项目的相关事宜。'
+    }
   }
 };

@@ -58,7 +58,7 @@ export const MainNav = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image 
-              src="/images/main-logo.png"
+              src="/images/main-logo.svg"
               alt="FreePeriod Logo"
               width={32}
               height={32}

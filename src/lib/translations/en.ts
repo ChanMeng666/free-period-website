@@ -434,6 +434,21 @@ export const en = {
       address: 'Guangzhou, China',
       hours: 'Mon-Fri 9:00-18:00'
     },
-    copyright: '© 2024 FreePeriod. All rights reserved.'
+    copyright: '© 2024 FreePeriod. All rights reserved.',
+    developer: {
+      craftedBy: 'Crafted by',
+      name: 'Chan Meng',
+      title: 'Fullstack Developer & Digital Solutions Architect',
+      email: 'chanmeng.dev@gmail.com',
+      portfolio: 'Portfolio',
+      cta: {
+        question: 'Need a custom website?',
+        action: "Let's talk →"
+      },
+      sourceCode: 'Source code:',
+      repository: 'GitHub Repository',
+      emailSubject: 'Website Development Inquiry',
+      emailBody: "Hi Chan, I'm interested in discussing a custom website project."
+    }
   }
 };
