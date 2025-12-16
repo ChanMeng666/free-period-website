@@ -8,7 +8,6 @@ const nextConfig = {
     // 在生产构建时忽略TypeScript错误
     ignoreBuildErrors: true,
   },
-  optimizeFonts: true,
   poweredByHeader: false,
   images: {
     unoptimized: process.env.NODE_ENV === 'development',
