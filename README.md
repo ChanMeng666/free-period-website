@@ -22,7 +22,7 @@ One-click **FREE** deployment of your sustainable care network.
 [![][github-forks-shield]][github-forks-link]
 [![][github-issues-shield]][github-issues-link]
 [![][github-license-shield]][github-license-link]
-[![][vercel-shield]][vercel-link]
+[![][cloudflare-shield]][cloudflare-link]
 
 **Share FreePeriod Project**
 
@@ -417,18 +417,19 @@ NEXT_PUBLIC_ANALYTICS_ID="your-analytics-id"
 
 ### One-Click Deployment
 
-**Vercel (Recommended)**
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChanMeng666%2Ffree-period-website)
+**Cloudflare Pages (Recommended)**
 
 **Manual Deployment:**
 
 ```bash
-# Install Vercel CLI
-npm i -g vercel
+# Install dependencies
+npm install
 
-# Deploy to production
-vercel --prod
+# Build static export
+npm run build
+
+# Deploy to Cloudflare Pages
+npm run deploy
 ```
 
 **Environment Variables for Production:**
@@ -618,9 +619,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 
 <!-- Project Links -->
-[live-site]: https://free-period-website.vercel.app/
-[docs]: https://free-period-website.vercel.app/education
-[impact]: https://free-period-website.vercel.app/impact
+[live-site]: https://free-period-website.pages.dev/
+[docs]: https://free-period-website.pages.dev/education
+[impact]: https://free-period-website.pages.dev/impact
 
 <!-- GitHub Links -->
 [github-issues-link]: https://github.com/ChanMeng666/free-period-website/issues
@@ -630,18 +631,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [github-license-link]: https://github.com/ChanMeng666/free-period-website/blob/main/LICENSE
 
 <!-- Deployment Links -->
-[vercel-link]: https://free-period-website.vercel.app/
+[cloudflare-link]: https://free-period-website.pages.dev/
 
 <!-- Shield Badges -->
 [github-stars-shield]: https://img.shields.io/github/stars/ChanMeng666/free-period-website?color=ffcb47&labelColor=black&style=flat-square
 [github-forks-shield]: https://img.shields.io/github/forks/ChanMeng666/free-period-website?color=8ae8ff&labelColor=black&style=flat-square
 [github-issues-shield]: https://img.shields.io/github/issues/ChanMeng666/free-period-website?color=ff80eb&labelColor=black&style=flat-square
 [github-license-shield]: https://img.shields.io/badge/license-MIT-white?labelColor=black&style=flat-square
-[vercel-shield]: https://img.shields.io/badge/vercel-online-55b467?labelColor=black&logo=vercel&style=flat-square
+[cloudflare-shield]: https://img.shields.io/badge/cloudflare-online-55b467?labelColor=black&logo=cloudflare&style=flat-square
 [pr-welcome-shield]: https://img.shields.io/badge/🤝_PRs_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 
 <!-- Badge Variants -->
-[demo-shield-badge]: https://img.shields.io/badge/TRY%20LIVE%20DEMO-ONLINE-55b467?labelColor=black&logo=vercel&style=for-the-badge
+[demo-shield-badge]: https://img.shields.io/badge/TRY%20LIVE%20DEMO-ONLINE-55b467?labelColor=black&logo=cloudflare&style=for-the-badge
 
 <!-- Social Share Links -->
 [share-x-link]: https://x.com/intent/tweet?hashtags=sustainability,opensource,menstrualhealth&text=Check%20out%20FreePeriod%20-%20Revolutionary%20Sustainable%20Menstrual%20Care%20Platform&url=https%3A%2F%2Fgithub.com%2FChanMeng666%2Ffree-period-website
