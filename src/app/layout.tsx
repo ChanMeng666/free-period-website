@@ -13,11 +13,33 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://free-period-website.pages.dev'),
   title: 'FreePeriod',
   description: 'FreePeriod - Making a difference in women\'s health and education',
   icons: {
     icon: '/images/main-logo.svg',
     apple: '/images/main-logo.svg',
+  },
+  openGraph: {
+    title: 'FreePeriod',
+    description: 'Sustainable menstrual care, accessible to everyone.',
+    type: 'website',
+    siteName: 'FreePeriod',
+    url: 'https://free-period-website.pages.dev',
+    images: [
+      {
+        url: '/og-cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'FreePeriod — sustainable menstrual care, accessible to everyone',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'FreePeriod',
+    description: 'Sustainable menstrual care, accessible to everyone.',
+    images: ['/og-cover.png'],
   },
 };
 
